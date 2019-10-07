@@ -51,7 +51,9 @@
 		<div class="col-md-3 col-md">
 			<h5>Resources</h5>
 			<ul class="list-unstyled text-small">
-				<li><a class="text-muted" href="mailto:project@mccabecosta.com">Hire me for a project</a></li>
+				
+				<li><i class="fas fa-share-alt fa-fw"></i> <a class="text-muted" href="mailto:project@mccabecosta.com">Hire me for a project</a></li>
+				<li><i class="fab fa-github fa-fw"></i> <a class="text-muted" href="https://github.com/yannickmcosta/IncomeExpenditure.xyz">Source Code</a></li>
 			</ul>
 		</div>
 		<div class="col-md-3 col-md">
@@ -66,7 +68,7 @@
 	<div class="row">
 		<div class="col-lg" id="footer-block">
 			<br />
-			<small class="d-block mb-3 text-muted">IncomeExpenditure.xyz - Making websites in minutes to allow people to fill in forms online where the councils can't be arsed<br />Content &copy; Yannick McCabe-Costa - <?php echo date("Y"); ?> &verbar; Usage constitutes acceptance of <a href="#" data-toggle="modal" data-target="#termsModal">site terms</a>.</small>
+			<small class="d-block mb-3 text-muted">IncomeExpenditure.xyz - Making websites in minutes to allow people to fill in forms online where the councils can't be arsed<br />Created by Yannick McCabe-Costa - <?php echo date("Y"); ?> &verbar; Usage constitutes acceptance of <a href="#" data-toggle="modal" data-target="#termsModal">site terms</a>.</small>
 		</div>
 	</div>
 </footer>
