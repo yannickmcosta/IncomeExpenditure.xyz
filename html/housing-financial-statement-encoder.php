@@ -19,11 +19,19 @@
 				<div class="col-md-12">
 				<p>Your filled form has been successfully encoded, and it has been stored in your browser with key <code><?php echo "formfill-the-standard-form-" . date("U"); ?></code>.</p>
 				<p>You can also see your data represented below in JSON format, if you like, you can copy/paste this into your notes for safe-keeping, then paste it into our parser.</p>
+				<br />
+				<button class="btn btn-info" data-clipboard-target="#jsonData"><i class="fas fa-clipboard fa-fw"></i> Copy to clipboard</button>
+				<br />
 				<hr />
+				<h3>Formatted JSON</h3>
 <pre>
 <?php echo json_encode($_POST, JSON_PRETTY_PRINT); ?>
 </pre>
-				</div>
+				<hr />
+				<h3>Unformatted JSON</h3>
+				<code id="jsonData">
+					<?php echo json_encode($_POST); ?>
+				</code>
 			</div>
 			<?php include_once(__DIR__ . "/includes/footer.php"); ?>
 		</div>
@@ -32,7 +40,8 @@
 			var	formFill	=	<?php echo json_encode($_POST); ?>;
 			localStorage.setItem('<?php echo "formfill-the-standard-form-" . date("U"); ?>', JSON.stringify(formFill));
 		</script>
-
-
+		<script>
+			new ClipboardJS('.btn');
+		</script>
 	</body>
 </html>
