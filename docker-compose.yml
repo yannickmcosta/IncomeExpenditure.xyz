@@ -1,0 +1,16 @@
+version: '3'
+services:
+  incomeexpenditure-web:
+    container_name: incomeexpenditure-web
+    build:
+      context: .
+      dockerfile: web.Dockerfile
+    ports:
+      - 127.0.0.1:8080:8080
+    volumes:
+      - ./html:/var/www/html
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
