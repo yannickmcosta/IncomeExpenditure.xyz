@@ -26,6 +26,16 @@
 					</li>
 				<?php } ?>
 				
+				<?php if ($_SERVER['REQUEST_URI'] == "/filled-forms") { ?>
+					<li class="nav-item active">
+						<a class="nav-link" href="/filled-forms">Your Filled Forms <span class="sr-only">(current)</span></a>
+					</li>
+				<?php } else { ?>
+					<li class="nav-item">
+						<a class="nav-link" href="/filled-forms">Your Filled Forms</a>
+					</li>
+				<?php } ?>
+				
 				<?php if ($_SERVER['REQUEST_URI'] == "/contact") { ?>
 					<li class="nav-item active">
 						<a class="nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>

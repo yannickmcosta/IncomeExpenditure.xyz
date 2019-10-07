@@ -24,8 +24,12 @@
 		</div>
 		<?php include_once(__DIR__ . "/includes/corejs.php"); ?>
 		<script>
-			for ( var i = 0, len = localStorage.length; i < len; ++i ) {
-				$( "#keys" ).append( localStorage.key( i ) + "<br />" );
+			if (localStorage.length > 0) {
+				for ( var i = 0, len = localStorage.length; i < len; ++i ) {
+					$( "#keys" ).append( localStorage.key( i ) + "<br />" );
+				}
+			} else {
+				$( "#keys" ).append( "There's no data currently stored in the browsers localStorage for this domain. Fill out a form then head back here.<br />" );
 			}
 		</script>
 	</body>

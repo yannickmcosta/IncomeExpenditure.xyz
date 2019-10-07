@@ -127,11 +127,11 @@
 												<div class="input-group-prepend">
 													<div class="input-group-text">£</div>
 												</div>
-												<input class="form-control" id="income[<?php echo $value; ?>]" type="number" min="0.00" step="0.01" name="income[<?php echo $value; ?>]" required="required" placeholder="E.g. 0.00" />
+												<input class="form-control" id="income[<?php echo $value; ?>][amount]" type="number" min="0.00" step="0.01" name="income[<?php echo $value; ?>][amount]" required="required" placeholder="E.g. 0.00" />
 											</div>
 										</td>
 										<td>
-											<select class="form-control" name="income[<?php echo $value; ?>-monthweek]">
+											<select class="form-control" name="income[<?php echo $value; ?>][recurrence]">
 												<option disabled="disabled" selected="selected" value="">Please Select...</option>
 												<option value="monthly">Monthly</option>
 												<option value="weekly">Weekly</option>
@@ -166,11 +166,11 @@
 												<div class="input-group-prepend">
 													<div class="input-group-text">£</div>
 												</div>
-												<input class="form-control" id="expenditure[<?php echo $value; ?>]" type="number" min="0.00" step="0.01" name="expenditure[<?php echo $value; ?>]" required="required" placeholder="0.00" />
+												<input class="form-control" id="expenditure[<?php echo $value; ?>][amount]" type="number" min="0.00" step="0.01" name="expenditure[<?php echo $value; ?>][amount]" required="required" placeholder="0.00" />
 											</div>
 										</td>
 										<td>
-											<select class="form-control" name="expenditure[<?php echo $value; ?>-monthweek]">
+											<select class="form-control" name="expenditure[<?php echo $value; ?>][recurrence]">
 												<option disabled="disabled" selected="selected" value="">Please Select...</option>
 												<option value="monthly">Monthly</option>
 												<option value="weekly">Weekly</option>
