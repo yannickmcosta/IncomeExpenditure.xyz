@@ -37,6 +37,27 @@
 		</div>
 	</div>
 </div>
+<!-- Clear LocalStorage -->
+<div class="modal fade" id="clearLocalStorageModal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="clearLocalStorageModalLabel">Clear LocalStorage</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<h3>You are about to clear your <code>localStorage</code> for this site!</h3>
+				<p>This will remove any and all form fills you have done. This <strong>cannot be reversed and your data will be irrecoverably destroyed.</strong></p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close and go back</button>
+				<button type="button" class="btn btn-danger" onclick="clearLocalStorage()">Purge LocalStorage</button>
+			</div>
+		</div>
+	</div>
+</div>
 <footer class="pt-4 my-md-2 pt-md-4 border-top">
 	<div class="row">
 		<div class="col-md-6 col-lg">

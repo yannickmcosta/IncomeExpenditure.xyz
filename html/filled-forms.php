@@ -18,6 +18,8 @@
 			<div class="row mt-8 mb-8">
 				<div class="col-md-12">
 					<p id="keys"></p>
+					<hr />
+					<button class="btn btn-danger" data-toggle="modal" data-target="#clearLocalStorageModal">Clear LocalStorage</button>
 				</div>
 			</div>
 			<?php include_once(__DIR__ . "/includes/footer.php"); ?>
@@ -30,6 +32,25 @@
 				}
 			} else {
 				$( "#keys" ).append( "There's no data currently stored in the browsers localStorage for this domain. Fill out a form then head back here.<br />" );
+			}
+		</script>
+		<script>
+			function clearLocalStorage() {
+				if (localStorage.clear()) {
+					$( '#clearLocalStorageModal' ).modal( 'toggle' );
+					Swal.fire(
+						'All done',
+						'LocalStorage has been cleared.',
+						'success'
+					);
+				} else {
+					Swal.fire(
+						'Something\'s not right',
+						'LocalStorage has NOT been cleared.',
+						'error'
+					);
+				}
+				
 			}
 		</script>
 	</body>
