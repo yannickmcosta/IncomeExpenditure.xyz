@@ -22,9 +22,9 @@
 					<br />
 					<form action="housing-financial-statement" method="get">
 						<label for="priority_debts">How many priority debts (utilities, rent, mortgage, fines, etc) do you have?</label>
-						<input type="number" min="0" max="20" step="1" class="form-control" name="priority_debts" placeholder="E.g. 0" /><br />
+						<input type="number" alt="How many priority debts (utilities, rent, mortgage, fines, etc) do you have?" min="0" max="20" step="1" class="form-control" name="priority_debts" placeholder="E.g. 0" /><br />
 						<label for="credit_commitments">How many credit commitments (all other cards, catalogues, loans, etc.) do you have?</label>
-						<input type="number" min="0" max="20" step="1" class="form-control" name="credit_commitments" placeholder="E.g. 0" /><br />
+						<input type="number" alt="How many credit commitments (all other cards, catalogues, loans, etc.) do you have? " min="0" max="20" step="1" class="form-control" name="credit_commitments" placeholder="E.g. 0" /><br />
 						<button type="submit" class="btn btn-success btn-lg"><i class="fa fa-edit fa-fw"></i> Begin</button>
 					</form>
 				</div>

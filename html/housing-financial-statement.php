@@ -75,7 +75,7 @@
 											Name
 										</td>
 										<td>
-											<input type="text" class="form-control" name="individual[name]" placeholder="Ms Jane Smith" required="required"/>
+											<input type="text" class="form-control" alt="Your name" name="individual[name]" placeholder="Ms Jane Smith" required="required"/>
 										</td>
 									</tr>
 									<tr>
@@ -83,7 +83,7 @@
 											Address
 										</td>
 										<td>
-											<input type="text" class="form-control" name="individual[address]" placeholder="123 ExWhyZed Lane, County Claire, London, M1 2AB" required="required"/>
+											<input type="text" class="form-control" alt="Your address" name="individual[address]" placeholder="123 ExWhyZed Lane, County Claire, London, M1 2AB" required="required"/>
 										</td>
 									</tr>
 									<tr>
@@ -91,7 +91,7 @@
 											Reference No
 										</td>
 										<td>
-											<input type="text" class="form-control" name="individual[reference]" placeholder="You may not need this"/>
+											<input type="text" class="form-control" alt="Your reference number, should you have one" name="individual[reference]" placeholder="You may not need this"/>
 										</td>
 									</tr>
 									<tr>
@@ -99,7 +99,7 @@
 											Telephone
 										</td>
 										<td>
-											<input type="tel" class="form-control" name="individual[telephone]" placeholder="+44 1234 567 890"/>
+											<input type="tel" class="form-control" alt="Your telephone number" name="individual[telephone]" placeholder="+44 1234 567 890"/>
 										</td>
 									</tr>
 								</tbody>
@@ -127,11 +127,11 @@
 												<div class="input-group-prepend">
 													<div class="input-group-text">£</div>
 												</div>
-												<input class="form-control" id="income[<?php echo $value; ?>][amount]" type="number" min="0.00" step="0.01" name="income[<?php echo $value; ?>][amount]" required="required" placeholder="E.g. 0.00" />
+												<input class="form-control" alt="Income Category: <?php echo $key; ?>" id="income[<?php echo $value; ?>][amount]" type="number" min="0.00" step="0.01" name="income[<?php echo $value; ?>][amount]" required="required" placeholder="E.g. 0.00" />
 											</div>
 										</td>
 										<td>
-											<select class="form-control" name="income[<?php echo $value; ?>][recurrence]">
+											<select class="form-control" alt="Income Category Recurrence: <?php echo $key; ?>" name="income[<?php echo $value; ?>][recurrence]">
 												<option disabled="disabled" selected="selected" value="">Please Select...</option>
 												<option value="monthly">Monthly</option>
 												<option value="weekly">Weekly</option>
@@ -166,11 +166,11 @@
 												<div class="input-group-prepend">
 													<div class="input-group-text">£</div>
 												</div>
-												<input class="form-control" id="expenditure[<?php echo $value; ?>][amount]" type="number" min="0.00" step="0.01" name="expenditure[<?php echo $value; ?>][amount]" required="required" placeholder="0.00" />
+												<input class="form-control" alt="Expenditure Category: <?php echo $key; ?>" id="expenditure[<?php echo $value; ?>][amount]" type="number" min="0.00" step="0.01" name="expenditure[<?php echo $value; ?>][amount]" required="required" placeholder="0.00" />
 											</div>
 										</td>
 										<td>
-											<select class="form-control" name="expenditure[<?php echo $value; ?>][recurrence]">
+											<select class="form-control" alt="Expenditure Category Recurrence: <?php echo $key; ?>" name="expenditure[<?php echo $value; ?>][recurrence]">
 												<option disabled="disabled" selected="selected" value="">Please Select...</option>
 												<option value="monthly">Monthly</option>
 												<option value="weekly">Weekly</option>
@@ -206,14 +206,14 @@
 										<?php for ($i = 1; $i <= $priorityDebts; ++$i) { ?>
 										<tr>
 											<td>
-												<input type="text" class="form-control" name="priority_debt[<?php echo $i; ?>][owed_to]" placeholder="E.g. ABC Bank Ltd" />
+												<input type="text" alt="Priority Debt <?php echo $i; ?>, Debtor" class="form-control" name="priority_debt[<?php echo $i; ?>][owed_to]" placeholder="E.g. ABC Bank Ltd" />
 											</td>
 											<td>
 												<div class="input-group mb-2">
 													<div class="input-group-prepend">
 														<div class="input-group-text">£</div>
 													</div>
-													<input type="number" min="0.00" step="0.01" class="form-control" name="priority_debt[<?php echo $i; ?>][amount_owed]" placeholder="0.00" />
+													<input type="number" alt="Priority Debt <?php echo $i; ?>, Amount Owed" min="0.00" step="0.01" class="form-control" name="priority_debt[<?php echo $i; ?>][amount_owed]" placeholder="0.00" />
 												</div>
 											</td>
 											<td>
@@ -221,11 +221,11 @@
 													<div class="input-group-prepend">
 														<div class="input-group-text">£</div>
 													</div>
-													<input type="number" min="0.00" step="0.01" class="form-control" name="priority_debt[<?php echo $i; ?>][arrears]" placeholder="0.00" />
+													<input type="number" alt="Priority Debt <?php echo $i; ?>, Arrears" min="0.00" step="0.01" class="form-control" name="priority_debt[<?php echo $i; ?>][arrears]" placeholder="0.00" />
 												</div>
 											</td>
 											<td>
-												<input type="text" class="form-control" name="priority_debt[<?php echo $i; ?>][agreed_payments]" placeholder="This is a free text box" />
+												<input type="text" alt="Priority Debt <?php echo $i; ?>, Agreed Payments" class="form-control" name="priority_debt[<?php echo $i; ?>][agreed_payments]" placeholder="This is a free text box" />
 											</td>
 										</tr>
 										<?php } ?>
@@ -256,14 +256,14 @@
 										<?php for ($i = 1; $i <= $creditCommitments; ++$i) { ?>
 										<tr>
 											<td>
-												<input type="text" class="form-control" name="credit_commitments[<?php echo $i; ?>][owed_to]" placeholder="E.g. ABC Bank Ltd" />
+												<input type="text" alt="Credit Commitment <?php echo $i; ?>, Debtor" class="form-control" name="credit_commitments[<?php echo $i; ?>][owed_to]" placeholder="E.g. ABC Bank Ltd" />
 											</td>
 											<td>
 												<div class="input-group mb-2">
 													<div class="input-group-prepend">
 														<div class="input-group-text">£</div>
 													</div>
-													<input type="number" min="0.00" step="0.01" class="form-control" name="credit_commitments[<?php echo $i; ?>][amount_owed]" placeholder="0.00" />
+													<input type="number" alt="Credit Commitment <?php echo $i; ?>, Amount Owed" min="0.00" step="0.01" class="form-control" name="credit_commitments[<?php echo $i; ?>][amount_owed]" placeholder="0.00" />
 												</div>
 											</td>
 											<td>
@@ -271,11 +271,11 @@
 													<div class="input-group-prepend">
 														<div class="input-group-text">£</div>
 													</div>
-													<input type="number" min="0.00" step="0.01" class="form-control" name="credit_commitments[<?php echo $i; ?>][arrears]" placeholder="0.00" />
+													<input type="number" alt="Credit Commitment <?php echo $i; ?>, Arrears" min="0.00" step="0.01" class="form-control" name="credit_commitments[<?php echo $i; ?>][arrears]" placeholder="0.00" />
 												</div>
 											</td>
 											<td>
-												<input type="text" class="form-control" name="credit_commitments[<?php echo $i; ?>][agreed_payments]" placeholder="This is a free text box" />
+												<input type="text" alt="Credit Commitment <?php echo $i; ?>, Agreed Payments" class="form-control" name="credit_commitments[<?php echo $i; ?>][agreed_payments]" placeholder="This is a free text box" />
 											</td>
 										</tr>
 										<?php } ?>
@@ -304,7 +304,7 @@
 												<div class="input-group-prepend">
 													<div class="input-group-text">£</div>
 												</div>
-												<input class="form-control" id="savings[<?php echo $value; ?>]" type="number" min="0.00" step="0.01" name="savings[<?php echo $value; ?>]" required="required" placeholder="0.00" />
+												<input class="form-control" alt="Savings Category: <?php echo $key; ?>" id="savings[<?php echo $value; ?>]" type="number" min="0.00" step="0.01" name="savings[<?php echo $value; ?>]" required="required" placeholder="0.00" />
 											</div>
 										</td>
 									</tr>
@@ -315,7 +315,7 @@
 						<hr />
 						<h4>Notes</h4>
 						<p><small>You can include information here that is to be submitted/printed with the rest of this form.</small></p>
-						<textarea class="form-control" maxlength="1024" name="notes"></textarea>
+						<textarea class="form-control" alt="Additional Notes" maxlength="1024" name="notes"></textarea>
 						<hr />
 						<h3>Don't forget</h3>
 						<p>Many councils require evidence of income and expenditure such as Electric Bill, Gas Bill, Debt Recovery letters, bank statements, etc.</p>
