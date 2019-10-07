@@ -4,13 +4,13 @@
 		<?php include_once(__DIR__ . "/includes/head.php"); ?>
 		<title>Home | IncomeExpenditure.xyz</title>
 		<meta property="og:title" content="Home | IncomeExpenditure.xyz" />
-		<meta property="og:description" content="A website made in minutes for filling out Income and Expenditure Financial Statements, born out of a requirement for a family member to fill in a form emailed to them (from a council...) with no editable regions." />
+		<meta property="og:description" content="A website made in minutes for filling out Income and Expenditure Financial Statements, born out of a requirement for a family member to fill in a form emailed to them with no editable regions." />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://incomeexpenditure.xyz" />
 		<meta property="og:image" content="" />
 		<meta name="twitter:card" content="summary" />
 	    <meta name="twitter:title" content="Home | IncomeExpenditure.xyz" />
-	    <meta name="twitter:description" content="A website made in minutes for filling out Income and Expenditure Financial Statements, born out of a requirement for a family member to fill in a form emailed to them (from a council...) with no editable regions." />
+	    <meta name="twitter:description" content="A website made in minutes for filling out Income and Expenditure Financial Statements, born out of a requirement for a family member to fill in a form emailed to them with no editable regions." />
 	    <meta name="twitter:url" content="https://incomeexpenditure.xyz/" />
 	    <meta name="twitter:site" content="@yannickmcosta" />
 	</head>
@@ -19,12 +19,12 @@
 		<div class="container mt-5">
 			<div class="row">
 				<div class="col-md">
-					<h1 class="display-4">IncomeExpenditure.xyz</h1>
-					<p class="lead">A website made in minutes for filling out Income and Expenditure Financial Statements, born out of a requirement for a family member to fill in a form emailed to them (from a council...) with no editable regions.</p>
+					<h1 class="display-4 d-none d-sm-block">IncomeExpenditure.xyz</h1>
+					<h4 class="display-4 d-block d-sm-none">IncomeExpenditure.xyz</h4>
+					<p class="lead">A website made in minutes for filling out Income and Expenditure Financial Statements, born out of a requirement for a family member to fill in a form emailed to them with no editable regions.</p>
 					<hr />
-					<p>Welcome, this has been created by Yannick McCabe-Costa to assist people who have limited access to technology, or who have received an email similar to one a family member received from Cheshire Home Choice (Cheshire East Council) with a "form" that needs filling out. Of course, it's not an <strong>interactive form</strong>, HEAVEN FORBID. It's a f**king email table, with no editable regions, but <em>my god if you don't fill it out there will be hell to pay.</em></p>
-					<p>So no need to go grab your pen and tip-ex and start scribbling all over your computer screen, this is 2019, and this lovely thing called i&nbsp;n&nbsp;t&nbsp;e&nbsp;r&nbsp;a&nbsp;c&nbsp;t&nbsp;i&nbsp;v&nbsp;e dynamic pages exist, don't they Cheshire East? Useless...</p>
-					<p>Anyway, you are more than welcome to use this as much as you like, but it's provided without warranty, like any good piece of open source software.</p>
+					<p>Welcome, this has been created by Yannick McCabe-Costa to assist people who have limited access to technology, or who have received an email similar to one a family member received from Cheshire Home Choice (Cheshire East Council) with a "form" that needs filling out. Unfortunately, this form consisted of un-editable regions in an email, and there was no PDF attachment. So an itch needed scratching.</p>
+					<p>You are more than welcome to use this as much as you like, but it's provided without warranty, like any good piece of open source software.</p>
 				</div>
 			</div>
 		</div>

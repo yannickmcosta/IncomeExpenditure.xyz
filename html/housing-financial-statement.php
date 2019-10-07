@@ -75,7 +75,7 @@
 											Name
 										</td>
 										<td>
-											<input type="text" class="form-control" name="individual[name]" placeholder="Ms Jane Smith" required="required" autofocus="autofocus"/>
+											<input type="text" class="form-control" name="individual[name]" placeholder="Ms Jane Smith" required="required"/>
 										</td>
 									</tr>
 									<tr>
@@ -315,7 +315,7 @@
 						<hr />
 						<h4>Notes</h4>
 						<p><small>You can include information here that is to be submitted/printed with the rest of this form.</small></p>
-						<textarea class="form-control" maxlength="1024"></textarea>
+						<textarea class="form-control" maxlength="1024" name="notes"></textarea>
 						<hr />
 						<h3>Don't forget</h3>
 						<p>Many councils require evidence of income and expenditure such as Electric Bill, Gas Bill, Debt Recovery letters, bank statements, etc.</p>
