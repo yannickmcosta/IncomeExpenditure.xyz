@@ -1,3 +1,4 @@
+<?php $formID	=	"formfill-the-standard-form-" . date("U"); ?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -17,10 +18,10 @@
 			<hr />
 			<div class="row mt-8 mb-8">
 				<div class="col-md-12">
-				<p>Your filled form has been successfully encoded, and it has been stored in your browser with key <code><?php echo "formfill-the-standard-form-" . date("U"); ?></code>.</p>
+				<p>Your filled form has been successfully encoded, and it has been stored in your browser with key <code><?php echo $formID; ?></code>.</p>
 				<p>You can also see your data represented below in JSON format, if you like, you can copy/paste this into your notes for safe-keeping, then paste it into our parser.</p>
 				<br />
-				<button class="btn btn-info" data-clipboard-target="#jsonData"><i class="fas fa-clipboard fa-fw"></i> Copy to clipboard</button>
+				<button class="btn btn-info" data-clipboard-target="#jsonData"><i class="fas fa-clipboard fa-fw"></i> Copy to clipboard</button>&nbsp;<a href="generate-filled-form?formID=<?php echo $formID; ?>" class="btn btn-success">Generate completed form</a>
 				<br />
 				<hr />
 				<h3>Formatted JSON</h3>
@@ -38,7 +39,7 @@
 		<?php include_once(__DIR__ . "/includes/corejs.php"); ?>
 		<script>
 			var	formFill	=	<?php echo json_encode($_POST); ?>;
-			localStorage.setItem('<?php echo "formfill-the-standard-form-" . date("U"); ?>', JSON.stringify(formFill));
+			localStorage.setItem('<?php echo $formID; ?>', JSON.stringify(formFill));
 		</script>
 		<script>
 			new ClipboardJS('.btn');
