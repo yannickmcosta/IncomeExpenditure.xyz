@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: web.Dockerfile
     ports:
-      - 127.0.0.1:8080:8080
+      - 127.0.0.1:49161:8080
     volumes:
       - ./html:/var/www/html
     logging:
