@@ -13,10 +13,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
 <link rel="manifest" href="/assets/icons/site.webmanifest">
-<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/assets/icons/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/assets/icons/browserconfig.xml">
+<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg" color="#494949">
+<meta name="msapplication-TileColor" content="#d5d5d5">
 <meta name="theme-color" content="#ffffff">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha256-KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=" crossorigin="anonymous"></script>
 <!-- Optional: include a polyfill for ES6 Promises for IE11 and Android browser -->
