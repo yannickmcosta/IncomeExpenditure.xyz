@@ -30,7 +30,7 @@
 				if (localStorage.length > 0) {
 					$( "#clearLocalStorageButton" ).show();
 					for ( var i = 0, len = localStorage.length; i < len; ++i ) {
-						$( "#keys" ).append( localStorage.key( i ) + "<br />" );
+						$( "#keys" ).append( "<a href=\"generate-filled-form?formID=" + localStorage.key( i ) + "\"><i class=\"fa fa-eye\"></i> " + localStorage.key( i ) + "</a><br />" );
 					}
 				} else {
 					$( "#clearLocalStorageButton" ).hide();
@@ -40,21 +40,11 @@
 		</script>
 		<script>
 			function clearLocalStorage() {
-				if (localStorage.clear()) {
-					$( '#clearLocalStorageModal' ).modal( 'toggle' );
-					Swal.fire(
-						'All done',
-						'LocalStorage has been cleared.',
-						'success'
-					);
-				} else {
-					Swal.fire(
-						'Something\'s not right',
-						'LocalStorage has NOT been cleared.',
-						'error'
-					);
-				}
-				
+				localStorage.clear()
+				$( '#clearLocalStorageModal' ).modal( 'hide' );
+				alert('LocalStorage has been cleared.');
+				$( "#clearLocalStorageButton" ).hide();
+				$( "#keys" ).html( "There's no data currently stored in the browsers localStorage for this domain. Fill out a form then head back here.<br />" );
 			}
 		</script>
 	</body>

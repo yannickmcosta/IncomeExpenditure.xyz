@@ -121,6 +121,7 @@
 									<tr>
 										<td>
 											<?php echo $key; ?>
+											<input type="hidden" name="income[<?php echo $value; ?>][formatted_key]" value="<?php echo $key; ?>" />
 										</td>
 										<td>
 											<div class="input-group mb-2">
@@ -160,6 +161,7 @@
 									<tr>
 										<td>
 											<?php echo $key; ?>
+											<input type="hidden" name="expenditure[<?php echo $value; ?>][formatted_key]" value="<?php echo $key; ?>" />
 										</td>
 										<td>
 											<div class="input-group mb-2">
@@ -298,13 +300,14 @@
 									<tr>
 										<td>
 											<?php echo $key; ?>
+											<input type="hidden" name="savings[<?php echo $value; ?>][formatted_key]" value="<?php echo $key; ?>" />
 										</td>
 										<td>
 											<div class="input-group mb-2">
 												<div class="input-group-prepend">
 													<div class="input-group-text">£</div>
 												</div>
-												<input class="form-control" alt="Savings Category: <?php echo $key; ?>" id="savings[<?php echo $value; ?>]" type="number" min="0.00" step="0.01" name="savings[<?php echo $value; ?>]" required="required" placeholder="0.00" />
+												<input class="form-control" alt="Savings Category: <?php echo $key; ?>" id="savings[<?php echo $value; ?>][amount]" type="number" min="0.00" step="0.01" name="savings[<?php echo $value; ?>][amount]" required="required" placeholder="0.00" />
 											</div>
 										</td>
 									</tr>

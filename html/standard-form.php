@@ -19,12 +19,12 @@
 				<div class="col-md">
 					<h3>Income and Expenditure Financial Statement Generator</h3>
 					<p>Just a couple of questions before we begin.</p>
-					<br />
-					<form action="housing-financial-statement" method="get">
+					<hr />
+					<form action="housing-financial-statement" method="get" class="pb-2">
 						<label for="priority_debts">How many priority debts (utilities, rent, mortgage, fines, etc) do you have?</label>
-						<input type="number" alt="How many priority debts (utilities, rent, mortgage, fines, etc) do you have?" min="0" max="20" step="1" class="form-control" name="priority_debts" placeholder="E.g. 0" /><br />
+						<input type="number" alt="How many priority debts (utilities, rent, mortgage, fines, etc) do you have?" min="0" max="20" step="1" class="form-control mb-3" name="priority_debts" placeholder="E.g. 0" />
 						<label for="credit_commitments">How many credit commitments (all other cards, catalogues, loans, etc.) do you have?</label>
-						<input type="number" alt="How many credit commitments (all other cards, catalogues, loans, etc.) do you have? " min="0" max="20" step="1" class="form-control" name="credit_commitments" placeholder="E.g. 0" /><br />
+						<input type="number" alt="How many credit commitments (all other cards, catalogues, loans, etc.) do you have? " min="0" max="20" step="1" class="form-control mb-3" name="credit_commitments" placeholder="E.g. 0" />
 						<button type="submit" class="btn btn-success btn-lg"><i class="fa fa-edit fa-fw"></i> Begin</button>
 					</form>
 				</div>

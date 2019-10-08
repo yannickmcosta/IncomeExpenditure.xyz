@@ -35,17 +35,9 @@
 						<a class="nav-link" href="/filled-forms">Your Filled Forms</a>
 					</li>
 				<?php } ?>
-				
-				<?php if ($_SERVER['REQUEST_URI'] == "/contact") { ?>
-					<li class="nav-item active">
-						<a class="nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>
-					</li>
-				<?php } else { ?>
 					<li class="nav-item">
-						<a class="nav-link" href="/contact">Contact</a>
+						<a class="nav-link" href="https://mccabecosta.com/incomeexpenditure-xys">Contact</a>
 					</li>
-				<?php } ?>
-				
 				<?php /*
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
