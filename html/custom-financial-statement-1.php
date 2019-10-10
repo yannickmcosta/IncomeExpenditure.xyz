@@ -58,8 +58,7 @@
 		"Subscription: Plex"								=>	"subscription_plex",
 		"Subscription: Quickbooks"							=>	"subscription_quickbooks",
 		"Subscription: GSuite"								=>	"subscription_gsuite",
-		
-		
+		"Web Presence: Domains"								=>	"web_presence_domains",
 	];
 	
 	sort($incomeArray);
