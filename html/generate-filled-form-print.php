@@ -1,4 +1,11 @@
 <?php $jsonObject	=	json_decode($_POST['jsonData']); ?>
+<?php
+	if (isset($_GET['hideNA']) && $_GET['hideNA'] == "yes") {
+		$hideNA	=	TRUE;
+	} else {
+		$hideNA	=	FALSE;
+	}
+?>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -63,6 +70,7 @@
 									<?php $incomeTotalWeekly	=	0; ?>
 									<?php $incomeTotalMonthly	=	0; ?>
 									<?php foreach ($jsonObject->income as $incomeObject) { ?>
+									<?php if ($incomeObject->recurrence == "not_applicable") { continue; } ?>
 									<tr>
 										<td>
 											<?php echo $incomeObject->formatted_key; ?>
@@ -129,6 +137,7 @@
 									<?php $expenditureTotalWeekly	=	0; ?>
 									<?php $expenditureTotalMonthly	=	0; ?>
 									<?php foreach ($jsonObject->expenditure as $expenditureObject) { ?>
+									<?php if ($expenditureObject->recurrence == "not_applicable") { continue; } ?>
 									<tr>
 										<td>
 											<?php echo $expenditureObject->formatted_key; ?>
