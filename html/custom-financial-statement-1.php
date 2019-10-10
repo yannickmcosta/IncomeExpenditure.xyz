@@ -47,7 +47,7 @@
 		"County Court Judgements / Fines"					=>	"ccj_fines",
 		"Maintenance / Child Support"						=>	"maintenance_child_support",
 		"Other expenditure"									=>	"other_expenditure",
-		"Server Hosting:"									=>	"server_hosting_other"
+		"Server Hosting:"									=>	"server_hosting_other",
 		"Server Hosting: Hetzner"							=>	"server_hosting_hetzner",
 		"Server Hosting: Linode"							=>	"server_hosting_linode",
 		"Server Hosting: Digital Ocean"						=>	"server_hosting_digitalocean",
